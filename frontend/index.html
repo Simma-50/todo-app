@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Todo List</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <p class="eyebrow">TASK MANAGER</p>
+    <h1>My Todo List</h1>
+    <p class="subtitle">A simple app with separate frontend, backend and database servers.</p>
+    <form id="todo-form">
+      <input id="task-input" type="text" maxlength="255" placeholder="Enter a task..." required>
+      <button type="submit">Add task</button>
+    </form>
+    <p id="status" role="status" aria-live="polite"></p>
+    <section>
+      <div class="list-heading"><h2>Tasks</h2><span id="task-count">0 tasks</span></div>
+      <ul id="task-list"></ul>
+      <p id="empty-state">No tasks yet. Add your first task.</p>
+    </section>
+  </main>
+</body>
+</html>
